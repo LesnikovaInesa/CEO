@@ -1,0 +1,119 @@
+.experience {
+    background-color: #0D0D0D;
+    padding-top: 41px;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .experience {
+        padding-top: 91px;
+        padding-bottom: 160px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .experience {
+        padding-top: 141px;
+        padding-bottom: 210px;
+        margin-top: -180px;
+    }
+}
+
+.experience-container {
+    position: relative;
+    z-index: 1;
+}
+
+.experience-svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.experience-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: lowercase;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.experience-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .experience-title {
+        font-size: 60px;
+        margin-bottom: 38px;
+    }
+
+    .experience-title::after {
+        bottom: -18px;
+        width: 420px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .experience-title {
+        font-size: 80px;
+        margin-bottom: 50px;
+    }
+
+    .experience-title::after {
+        bottom: -24px;
+        width: 520px;
+    }
+}
+
+.experience-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .experience-text {
+        gap: 15px;  
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .experience-text {
+        gap: 20px;
+    }
+}
+
+.experience-paragraph {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .experience-paragraph {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .experience-paragraph {
+        font-size: 16px;
+    }
+}

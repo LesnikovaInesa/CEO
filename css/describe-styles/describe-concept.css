@@ -1,0 +1,236 @@
+.concept {
+    background-color: #0D0D0D;
+    padding-top: 40px;
+    padding-bottom: 38px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept {
+        padding-top: 80px;
+        padding-bottom: 78px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .concept {
+        padding-top: 120px;
+        padding-bottom: 118px;
+    }
+}
+
+.concept-container {
+    position: relative;
+    z-index: 1;
+}
+
+.concept-svg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100%;
+    width: auto;
+    transform: translateY(-50%);
+    pointer-events: none;
+    max-width: 50%;
+    min-width: 200px;
+    opacity: 0.6;
+}
+
+.concept-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: lowercase;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-title {
+        font-size: 60px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .concept-title {
+        font-size: 80px;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+}
+
+.concept-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .concept-content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 41px;
+        align-items: start;
+    }
+}
+
+.concept-div-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+    max-width: 339px;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-div-images {
+        flex-direction: row;
+        gap: 20px;
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .concept-div-images {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex-shrink: 0;
+        max-width: 520px;
+        width: 100%;
+    }
+}
+
+.img-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.concept-div-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .concept-div-image {
+        width: 100%;
+    }
+}
+
+.concept-items-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-items-grid {
+        gap: 30px; 
+    }
+}
+
+.concept-item {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-item {
+        gap: 41px; 
+    }   
+}
+
+.concept-div-number {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 0.66667;
+    text-transform: lowercase;
+    -webkit-text-stroke: 2px #3B5998;
+    color: transparent;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-div-number {
+        font-size: 120px;
+    }
+}
+
+.concept-div-text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 631px;
+    min-width: 0;
+}
+
+.concept-div-text-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #fff;
+    position: relative;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.concept-div-text-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 180px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-div-text-title {
+        font-size: 20px;
+        margin-bottom: 34px;
+    }
+    
+    .concept-div-text-title::after {
+        bottom: -16px;
+        width: 280px;
+        height: 2px;
+    }
+}
+
+.concept-div-text-paragraph {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .concept-div-text-paragraph {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .concept-div-text-paragraph {
+        font-size: 16px;
+        max-width: 631px;
+    }
+}
